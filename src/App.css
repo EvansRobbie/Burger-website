@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&display=swap');
+
+@font-face {
+  font-family: Bebas Neue;
+ 
+}
+@layer base{
+  :root{
+    --primary: #271506;
+  }
+  h1{
+    @apply text-5xl text-[var(--primary)] uppercase font-extrabold
+  }
+  input{
+    @apply border px-3 text-sm rounded-md py-2 md:py-4 md:text-base border-[var(--primary)]
+  }
+  button{
+    @apply  text-white font-medium md:text-sm uppercase drop-shadow font-alfa text-xs active:scale-105 
+  }
+}

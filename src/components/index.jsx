@@ -1,0 +1,5 @@
+export { default as Hero} from './Hero'
+export { default as Offers } from './Offers'
+export { default as Menu } from './Menu'
+export { default as Discover } from './Discover'
+export { default as Reservation } from './Reservation'
