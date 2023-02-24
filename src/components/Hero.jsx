@@ -21,7 +21,7 @@ const Hero = () => {
                 </div>
                 </div>
         
-                <div className='w-full h-[35vh] md:h-[45vh] lg:h-auto md:w-[600px] lg:w-[700px]'>
+                <div className='w-full h-[35vh] md:h-[35vh] lg:h-auto md:w-[600px] lg:w-[700px]'>
                         <img className='w-full h-full object-fill' src={HeroBurger} alt="HeroBurger" />
                 </div>
             </div>

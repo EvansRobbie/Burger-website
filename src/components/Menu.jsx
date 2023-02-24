@@ -16,7 +16,7 @@ const Menu = () => {
         <div className='my-10 grid grid-cols-2 md:grid-cols-3 gap-x-20 w-full `'>
             {MenuData.map((menu)=>{
                 return(
-                    <div className='flex items-center flex-col  w-full'>
+                    <div key={menu.id} className='flex items-center flex-col  w-full'>
                         <div className='w-[180px] lg:w-[300px] h-full grid items-center justify-items-center duration-300 ease-in'>
                             <img className='w-full  object-fill' src={menu.image} alt="" />
                             <img src={Shadow} alt="" />

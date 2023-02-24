@@ -9,7 +9,7 @@ const Discover = () => {
             <h1 className='font-bold text-2xl lg:text-4xl font-alfa uppercase text-[var(--primary)]'>Upcoming events</h1>
             <p className='text-[var(--primary)] text-base text-start lg:px-10 py-6'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, inventore adipisci! Veniam ipsa sed molestiae cupiditate modi nam impedit illo quo perferendis, delectus quam a suscipit provident voluptatem neque facere!</p>
         </div>
-        <div className='w-full md:w-[200vw] lg:w-[120vw] h-full md:h-[30vh] rounded-b-xl md:rounded-r-xl overflow-hidden'>
+        <div className='w-full md:w-[200vw] lg:w-[120vw] h-full md:h-[25vh] lg:h-[45vh] rounded-b-xl md:rounded-r-xl overflow-hidden'>
             <img className='w-full h-full object-fit ' src={Burger} alt="/" />
         </div>
     </div>
