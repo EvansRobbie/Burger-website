@@ -12,7 +12,21 @@
     --primary: #271506;
   }
   ::-webkit-scrollbar {
-    display: none;
+    height: 12px;
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 6px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #aaa;
+  }
+  ::-webkit-scrollbar-thumb:horizontal {
+    width: 0;
   }
   h1{
     @apply text-5xl text-[var(--primary)] uppercase font-extrabold
