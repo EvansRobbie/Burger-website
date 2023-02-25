@@ -7,7 +7,7 @@ const Footer = () => {
     const today = new Date()
   return (
     <footer className='relative w-full h-[60vh] md:h-[40vh] lg:h-[60vh]'>
-        <img className='w-full h-full object-fill' src={FooterImage} alt="footer image" />
+        <img className='w-full h-full object-fill' src={FooterImage} alt="footerBurger" />
         <div className='absolute top-0 left-0 opacity-100 z-10 px-4 w-full h-full'>
             <div className='flex flex-col md:flex-row md:items-center lg:px-20 justify-center md:justify-between md:gap-4  w-full md:h-full '>
                 <div className='flex flex-col w-full my-4 max-w-[500px] h-[25vh] md:h-[17vh] lg:h-[35vh] justify-between  '>

@@ -1,6 +1,7 @@
-import { useEffect } from 'react'
+import React from 'react'
 import Burger from '../assests/BurgerHouse.png'
 import Logo from '../assests/logo.png'
+import { motion } from 'framer-motion'
 
 const Navbar = ({nav}) => {
     // const [navScroll, setNavScroll] = useState(false)
@@ -13,6 +14,7 @@ const Navbar = ({nav}) => {
     //         window.removeEventListener('scroll', navScrolling)
     //     }
     // })
+    
     nav ? document.body.style.overflow =' hidden ': document.body.style.overflow = 'scroll'
   return (
     <div className='absolute top-0 left-0 opacity-100 z-20 w-full h-20 my-2 '>
@@ -45,19 +47,26 @@ const Navbar = ({nav}) => {
                     </ul>
                 </nav>
                     {/* Mobile nav */}     
-        <nav className= { ` ${nav ? 'left-0 ' : '-left-full' } fixed top-0 bg-black/80  flex flex-col justify-center items-center  opacity-100 z-20 w-full h-screen duration-500 ease-in md:hidden`}>
+        <motion.nav
+       
+        
+         className= { ` ${nav ? 'left-0 ' : '-left-full' } fixed top-0 bg-black/80  flex flex-col justify-center items-center  opacity-100 z-20 w-full h-screen duration-500 ease-in md:hidden`}>
                 <ul className=' flex flex-col items-center justify-center w-full h-full'>
                     {
                     ['Home', 'menu', 'our story',' contact us'].map((item) => {
                         return(
-                            <li key={item}  className='text-white py-8 font-bebas capitalize text-3xl '>
+                            <motion.li 
+                            whileHover={{scale:1.1}}
+                            whileTap= {{scale:0.9}}
+                            
+                            key={item}  className='text-white py-8 font-bebas capitalize text-3xl '>
                                 {item}
-                            </li>
+                            </motion.li>
                         )
                     })
                     }
                 </ul>
-            </nav>
+            </motion.nav>
             
     </div>
   )
