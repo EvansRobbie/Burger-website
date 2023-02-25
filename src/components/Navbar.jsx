@@ -33,14 +33,16 @@ const Navbar = ({nav}) => {
            
         </div>
         
-        <nav className='h-full w-full hidden md:block overflow-x-hidden !important '>
-                    <ul className='flex  justify-end gap-20 w-full md:px-2 xl:px-28'>
+        <nav className='h-full w-full hidden md:block  '>
+                    <ul className='flex  justify-end gap-16 xl:gap-20 w-full md:px-2 xl:px-28'>
                         {
                         ['Home', 'menu', 'our story',' contact us'].map((item) => {
                             return(
-                                <li key={item} className='font-bebas text-xl tracking-wider '>
+                                <motion.li 
+                                whileHover={{scale:1.1}}
+                                whileTap= {{scale:0.9}} key={item} className='font-bebas text-xl tracking-wider cursor-pointer '>
                                     {item}
-                                </li>
+                                </motion.li >
                             )
                         })
                         }
@@ -59,7 +61,7 @@ const Navbar = ({nav}) => {
                             whileHover={{scale:1.1}}
                             whileTap= {{scale:0.9}}
                             
-                            key={item}  className='text-white py-8 font-bebas capitalize text-3xl '>
+                            key={item}  className='text-white py-8 font-bebas capitalize text-3xl cursor-pointer '>
                                 {item}
                             </motion.li>
                         )

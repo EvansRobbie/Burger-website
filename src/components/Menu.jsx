@@ -17,9 +17,9 @@ const Menu = () => {
             {MenuData.map((menu)=>{
                 return(
                     <div key={menu.id} className='flex items-center flex-col  w-full'>
-                        <div className='w-[180px] lg:w-[300px] h-full grid items-center justify-items-center duration-300 ease-in'>
+                        <div className='w-[10.625rem] lg:w-[300px] h-full grid items-center justify-items-center duration-300 ease-in'>
                             <img className='w-full  object-fill' src={menu.image} alt="" />
-                            <img src={Shadow} alt="" />
+                            <img src={Shadow} alt="shadow" />
                         </div>
                         <div className='flex items-center flex-col my-4'>
                             <h1 className='text-lg font-bold md:text-3xl font-bebas'>{menu.name}</h1>
