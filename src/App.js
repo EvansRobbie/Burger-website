@@ -9,7 +9,7 @@ function App() {
       setNav(!nav)
   }
   return (
-    <div  >
+    <div className=' overflow-x-auto'  >
       <Navbar nav = {nav} />
       <Hero handleNav= {handleNav} nav = {nav} />
       <Offers/>

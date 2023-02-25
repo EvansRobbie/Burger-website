@@ -11,6 +11,9 @@
   :root{
     --primary: #271506;
   }
+  ::-webkit-scrollbar {
+    display: none;
+  }
   h1{
     @apply text-5xl text-[var(--primary)] uppercase font-extrabold
   }
