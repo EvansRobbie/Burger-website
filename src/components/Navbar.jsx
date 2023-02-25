@@ -33,7 +33,7 @@ const Navbar = ({nav}) => {
            
         </div>
         
-        <nav className='h-full w-full hidden md:block '>
+        <nav className='h-full w-full hidden md:block overflow-x-hidden !important '>
                     <ul className='flex  justify-end gap-20 w-full md:px-2 xl:px-28'>
                         {
                         ['Home', 'menu', 'our story',' contact us'].map((item) => {

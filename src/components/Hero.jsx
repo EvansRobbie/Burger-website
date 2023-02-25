@@ -5,7 +5,7 @@ import ToggleButton from './ToggleButton'
 
 const Hero = ({handleNav, nav}) => {
   return (
-    <div className='relative h-screen w-full'>
+    <div className='relative h-screen w-full '>
         <div className='w-full h-screen'>
             <img className='w-full h-full object-cover' src={heroBackground} alt="herobackground" />
         </div>

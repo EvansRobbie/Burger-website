@@ -4,7 +4,7 @@ import Shadow from '../assests/Shadow_middle.png'
 
 const Menu = () => {
   return (
-    <div className='my-8 md:my-12 max-w-[1200px] mx-auto px-6'>
+    <div className='my-8 md:my-12 max-w-[1200px] mx-auto px-6 '>
         <div className=' flex  flex-col  items-center gap-6 '>
             <div className='bg-orange-400/100 px-3 py-1 '>
             <h4 className='uppercase text-2xl md:text-3xl font-medium text-[var(--primary)] font-bebas'>Always tasty burger</h4>

@@ -6,7 +6,7 @@ import { FaFacebook, FaTwitter, FaWhatsapp, FaInstagram } from 'react-icons/fa'
 const Footer = () => {
     const today = new Date()
   return (
-    <footer className='relative w-full h-[60vh] md:h-[40vh] lg:h-[60vh]'>
+    <footer className='relative w-full h-[60vh] md:h-[40vh] lg:h-[60vh] overflow-x-hidden'>
         <img className='w-full h-full object-fill' src={FooterImage} alt="footerBurger" />
         <div className='absolute top-0 left-0 opacity-100 z-10 px-4 w-full h-full'>
             <div className='flex flex-col md:flex-row md:items-center lg:px-20 justify-center md:justify-between md:gap-4  w-full md:h-full '>
