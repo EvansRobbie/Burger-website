@@ -4,7 +4,7 @@ import BurgerLeft from '../assests/grp5_burger1.png'
 import BurgerRight from '../assests/grp5_burger2.png'
 const Reservation = () => {
   return (
-    <div className='relative my-8 md:my-28 max-w-full mx-auto px-6 '>
+    <div className='relative my-8 md:mt-28 max-w-full mx-auto px-6 '>
         <div className=' flex  flex-col  items-center'>
             <h2 className='uppercase text-2xl md:text-3xl font-medium text-[var(--primary)] font-bebas'>reservation</h2>
             <h1 className='font-bold text-3xl md:text-5xl font-alfa uppercase text-[var(--primary)]'>book your table</h1>
@@ -26,7 +26,7 @@ const Reservation = () => {
         <div className='absolute -top-[8rem] left-0 lg:w-[25vw]  '>
             <img className='w-full h-full' src={BurgerLeft} alt="" />
         </div>
-        <div className='absolute top-[50%] xl:top-[35%] right-0  h-[55vh]'>
+        <div className='absolute top-[50%] xl:top-[35%] right-0  h-[62vh] w-[20vw]'>
             <img className='w-full h-full object-fill' src={BurgerRight} alt="" />
         </div>
         </div>

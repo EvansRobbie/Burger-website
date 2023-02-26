@@ -2,11 +2,13 @@ import React from 'react'
 import FooterImage from '../assests/bg_footer.png'
 import BurgerHouse from '../assests/BurgerHouse_footer.png'
 import { HiLocationMarker, HiOutlineMail} from 'react-icons/hi'
-import { FaFacebook, FaTwitter, FaWhatsapp, FaInstagram } from 'react-icons/fa'
+import { MdFacebook} from 'react-icons/md'
+import { AiFillTwitterCircle, AiFillInstagram, AiOutlineWhatsApp} from 'react-icons/ai'
+
 const Footer = () => {
     const today = new Date()
   return (
-    <footer className='relative w-full h-[60vh] md:h-[40vh] lg:h-[60vh] overflow-x-hidden'>
+    <footer className='relative w-full h-[60vh] md:h-[40vh] lg:h-[60vh] md:px-10 md:my-10 '>
         <img className='w-full h-full object-fill' src={FooterImage} alt="footerBurger" />
         <div className='absolute top-0 left-0 opacity-100 z-10 px-4 w-full h-full'>
             <div className='flex flex-col md:flex-row md:items-center lg:px-20 justify-center md:justify-between md:gap-4  w-full md:h-full '>
@@ -38,10 +40,10 @@ const Footer = () => {
                 </div>
                 <div className='flex items-center gap-2 md:gap-4 justify-between md:justify-start w-full md:w-auto px-4'>
                     {/* Social Icons */}
-                    <FaInstagram size={25} className='active:scale-105 md:h-8 md:w-8 hover:shadow-slate-200 shadow-xl'/>
-                    <FaFacebook size={25} className='active:scale-105 md:h-8 md:w-8 hover:shadow-slate-200 shadow-xl'/>
-                    <FaTwitter size={25} className='active:scale-105 md:h-8 md:w-8 hover:shadow-slate-200 shadow-xl'/>
-                    <FaWhatsapp size={25} className='active:scale-105 md:h-8 md:w-8 hover:shadow-slate-200 shadow-xl'/>
+                    <AiFillInstagram size={25} className='active:scale-105 md:h-8 md:w-8 hover:shadow-slate-200 shadow-xl'/>
+                    <MdFacebook size={25} className='active:scale-105 md:h-9 md:w-9 hover:shadow-slate-200 shadow-xl'/>
+                    <AiFillTwitterCircle size={25} className='active:scale-105 md:h-8 md:w-8 hover:shadow-slate-200 shadow-xl'/>
+                    <AiOutlineWhatsApp size={25} className='active:scale-105 md:h-8 md:w-8 hover:shadow-slate-200 shadow-xl'/>
                 </div>
 
             </div>
